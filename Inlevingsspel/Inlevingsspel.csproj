@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0802E5E2-C387-4DD4-9019-C10A6DE255CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Inlevingsspel</RootNamespace>
+    <AssemblyName>Inlevingsspel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmoverzicht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmoverzicht.Designer.cs">
+      <DependentUpon>frmoverzicht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmselecteren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmselecteren.Designer.cs">
+      <DependentUpon>frmselecteren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroepLeider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroepLeider.Designer.cs">
+      <DependentUpon>GroepLeider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmoverzicht.resx">
+      <DependentUpon>frmoverzicht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmselecteren.resx">
+      <DependentUpon>frmselecteren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroepLeider.resx">
+      <DependentUpon>GroepLeider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\china.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\congo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duitsland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nigeria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peru.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vietnam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_1-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factory-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money-Bag-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monetary_budget-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money-Bag-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop-ink-oil-water-blue-round-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mac-Signal-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-engine-oil-icon-png-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-engine-oil-icon-png-35.v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\293.9-coal-mine-icon-iconbunny1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\293.9-coal-mine-icon-iconbunny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90820894-shovel-and-pickaxe-icon-with-long-shadow-flat-design-style-round-icon-shovel-and-pick-axe-silhouette.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
