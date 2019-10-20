@@ -1,6 +1,6 @@
 ﻿namespace Inlevingsspel
 {
-    partial class GroepLeider
+    partial class frmgroepleider
     {
         /// <summary>
         /// Required designer variable.

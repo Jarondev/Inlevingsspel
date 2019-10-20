@@ -8,5 +8,6 @@ D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inle
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.exe
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.pdb
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmselecteren.resources
-D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.GroepLeider.resources
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmoverzicht.resources
+D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmgroepleider.resources
+D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmspelregels.resources

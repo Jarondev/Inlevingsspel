@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Inlevingsspel
 {
-    public partial class GroepLeider : Form
+    public partial class frmgroepleider : Form
     {
-        public GroepLeider(int land)
+        public frmgroepleider(int land)
         {
             InitializeComponent();
         }

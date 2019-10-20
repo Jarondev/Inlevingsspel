@@ -70,14 +70,20 @@
     <Compile Include="frmspel.Designer.cs">
       <DependentUpon>frmspel.cs</DependentUpon>
     </Compile>
-    <Compile Include="GroepLeider.cs">
+    <Compile Include="frmgroepleider.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GroepLeider.Designer.cs">
-      <DependentUpon>GroepLeider.cs</DependentUpon>
+    <Compile Include="frmgroepleider.Designer.cs">
+      <DependentUpon>frmgroepleider.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmspelregels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmspelregels.Designer.cs">
+      <DependentUpon>frmspelregels.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,8 +93,11 @@
     <EmbeddedResource Include="frmselecteren.resx">
       <DependentUpon>frmselecteren.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GroepLeider.resx">
-      <DependentUpon>GroepLeider.cs</DependentUpon>
+    <EmbeddedResource Include="frmgroepleider.resx">
+      <DependentUpon>frmgroepleider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmspelregels.resx">
+      <DependentUpon>frmspelregels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

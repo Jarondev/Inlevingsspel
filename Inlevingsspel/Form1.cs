@@ -21,8 +21,16 @@ namespace Inlevingsspel
         {
             frmselecteren frmselectereni = new frmselecteren();
             this.Hide();
+            frmselectereni.StartPosition = FormStartPosition.CenterParent;
             frmselectereni.ShowDialog();
             this.Dispose();
+        }
+
+        private void btnspelregels_Click(object sender, EventArgs e)
+        {
+            frmspelregels frmspelregelsi = new frmspelregels();
+            frmspelregelsi.StartPosition = FormStartPosition.CenterParent;
+            frmspelregelsi.ShowDialog();
         }
     }
 }

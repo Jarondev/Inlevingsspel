@@ -284,10 +284,10 @@
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label14.Location = new System.Drawing.Point(78, 9);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(56, 9);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(636, 39);
+            this.label14.Size = new System.Drawing.Size(677, 39);
             this.label14.TabIndex = 13;
             this.label14.Text = "Startposities van de verschillende landen";
             // 

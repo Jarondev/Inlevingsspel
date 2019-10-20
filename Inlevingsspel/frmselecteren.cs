@@ -28,7 +28,7 @@ namespace Inlevingsspel
             if (sender.ToString().Contains("Activeren"))
             {
                 naam = null;
-                GroepLeider groep = new GroepLeider(land);
+                frmgroepleider groep = new frmgroepleider(land);
                 groep.StartPosition = FormStartPosition.CenterParent;
                 groep.ShowDialog();
                 if (naam != null)
