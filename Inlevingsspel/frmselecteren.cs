@@ -100,6 +100,12 @@ namespace Inlevingsspel
             if (!CheckLanden())
             {
                 MessageBox.Show("Je hebt niet genoeg landen die meespelen!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            } else
+            {
+                this.Hide();
+                frmspel frmspeli = new frmspel();
+                frmspeli.ShowDialog();
+                this.Close();
             }
         }
 

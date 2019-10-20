@@ -64,6 +64,12 @@
     <Compile Include="frmselecteren.Designer.cs">
       <DependentUpon>frmselecteren.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmspel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmspel.Designer.cs">
+      <DependentUpon>frmspel.cs</DependentUpon>
+    </Compile>
     <Compile Include="GroepLeider.cs">
       <SubType>Form</SubType>
     </Compile>
