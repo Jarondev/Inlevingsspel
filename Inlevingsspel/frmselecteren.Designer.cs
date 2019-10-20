@@ -32,26 +32,18 @@
             this.btnstarten = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnduitsland = new System.Windows.Forms.Button();
-            this.btninfoduitsland = new System.Windows.Forms.Button();
-            this.btninfousa = new System.Windows.Forms.Button();
             this.btnusa = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.btninfochina = new System.Windows.Forms.Button();
             this.btnchina = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.btninfovk = new System.Windows.Forms.Button();
             this.btnvk = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.btninfocongo = new System.Windows.Forms.Button();
             this.btncongo = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.btninfovietnam = new System.Windows.Forms.Button();
             this.btnvietnam = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.btninfoperu = new System.Windows.Forms.Button();
             this.btnperu = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.btninfonigeria = new System.Windows.Forms.Button();
             this.btnnigeria = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnoverzicht = new System.Windows.Forms.Button();
@@ -119,24 +111,6 @@
             this.btnduitsland.UseVisualStyleBackColor = false;
             this.btnduitsland.Click += new System.EventHandler(this.btnduitsland_Click);
             // 
-            // btninfoduitsland
-            // 
-            this.btninfoduitsland.Location = new System.Drawing.Point(221, 126);
-            this.btninfoduitsland.Name = "btninfoduitsland";
-            this.btninfoduitsland.Size = new System.Drawing.Size(122, 43);
-            this.btninfoduitsland.TabIndex = 5;
-            this.btninfoduitsland.Text = "Info";
-            this.btninfoduitsland.UseVisualStyleBackColor = true;
-            // 
-            // btninfousa
-            // 
-            this.btninfousa.Location = new System.Drawing.Point(583, 126);
-            this.btninfousa.Name = "btninfousa";
-            this.btninfousa.Size = new System.Drawing.Size(122, 43);
-            this.btninfousa.TabIndex = 9;
-            this.btninfousa.Text = "Info";
-            this.btninfousa.UseVisualStyleBackColor = true;
-            // 
             // btnusa
             // 
             this.btnusa.BackColor = System.Drawing.Color.Transparent;
@@ -159,15 +133,6 @@
             this.label2.Size = new System.Drawing.Size(70, 31);
             this.label2.TabIndex = 7;
             this.label2.Text = "USA";
-            // 
-            // btninfochina
-            // 
-            this.btninfochina.Location = new System.Drawing.Point(948, 126);
-            this.btninfochina.Name = "btninfochina";
-            this.btninfochina.Size = new System.Drawing.Size(122, 43);
-            this.btninfochina.TabIndex = 13;
-            this.btninfochina.Text = "Info";
-            this.btninfochina.UseVisualStyleBackColor = true;
             // 
             // btnchina
             // 
@@ -192,15 +157,6 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "China";
             // 
-            // btninfovk
-            // 
-            this.btninfovk.Location = new System.Drawing.Point(221, 283);
-            this.btninfovk.Name = "btninfovk";
-            this.btninfovk.Size = new System.Drawing.Size(122, 43);
-            this.btninfovk.TabIndex = 17;
-            this.btninfovk.Text = "Info";
-            this.btninfovk.UseVisualStyleBackColor = true;
-            // 
             // btnvk
             // 
             this.btnvk.BackColor = System.Drawing.Color.Transparent;
@@ -223,15 +179,6 @@
             this.label4.Size = new System.Drawing.Size(50, 31);
             this.label4.TabIndex = 14;
             this.label4.Text = "VK";
-            // 
-            // btninfocongo
-            // 
-            this.btninfocongo.Location = new System.Drawing.Point(581, 283);
-            this.btninfocongo.Name = "btninfocongo";
-            this.btninfocongo.Size = new System.Drawing.Size(122, 43);
-            this.btninfocongo.TabIndex = 21;
-            this.btninfocongo.Text = "Info";
-            this.btninfocongo.UseVisualStyleBackColor = true;
             // 
             // btncongo
             // 
@@ -256,15 +203,6 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Congo";
             // 
-            // btninfovietnam
-            // 
-            this.btninfovietnam.Location = new System.Drawing.Point(948, 283);
-            this.btninfovietnam.Name = "btninfovietnam";
-            this.btninfovietnam.Size = new System.Drawing.Size(122, 43);
-            this.btninfovietnam.TabIndex = 25;
-            this.btninfovietnam.Text = "Info";
-            this.btninfovietnam.UseVisualStyleBackColor = true;
-            // 
             // btnvietnam
             // 
             this.btnvietnam.BackColor = System.Drawing.Color.Transparent;
@@ -288,15 +226,6 @@
             this.label6.TabIndex = 22;
             this.label6.Text = "Vietnam";
             // 
-            // btninfoperu
-            // 
-            this.btninfoperu.Location = new System.Drawing.Point(581, 445);
-            this.btninfoperu.Name = "btninfoperu";
-            this.btninfoperu.Size = new System.Drawing.Size(122, 43);
-            this.btninfoperu.TabIndex = 33;
-            this.btninfoperu.Text = "Info";
-            this.btninfoperu.UseVisualStyleBackColor = true;
-            // 
             // btnperu
             // 
             this.btnperu.BackColor = System.Drawing.Color.Transparent;
@@ -319,15 +248,6 @@
             this.label7.Size = new System.Drawing.Size(71, 31);
             this.label7.TabIndex = 30;
             this.label7.Text = "Peru";
-            // 
-            // btninfonigeria
-            // 
-            this.btninfonigeria.Location = new System.Drawing.Point(221, 445);
-            this.btninfonigeria.Name = "btninfonigeria";
-            this.btninfonigeria.Size = new System.Drawing.Size(122, 43);
-            this.btninfonigeria.TabIndex = 29;
-            this.btninfonigeria.Text = "Info";
-            this.btninfonigeria.UseVisualStyleBackColor = true;
             // 
             // btnnigeria
             // 
@@ -366,6 +286,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox7.Image = global::Inlevingsspel.Properties.Resources.peru;
             this.pictureBox7.Location = new System.Drawing.Point(390, 411);
             this.pictureBox7.Name = "pictureBox7";
@@ -376,6 +297,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox8.Image = global::Inlevingsspel.Properties.Resources.nigeria;
             this.pictureBox8.Location = new System.Drawing.Point(30, 411);
             this.pictureBox8.Name = "pictureBox8";
@@ -386,6 +308,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6.Image = global::Inlevingsspel.Properties.Resources.vietnam;
             this.pictureBox6.Location = new System.Drawing.Point(757, 249);
             this.pictureBox6.Name = "pictureBox6";
@@ -396,6 +319,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Image = global::Inlevingsspel.Properties.Resources.congo;
             this.pictureBox5.Location = new System.Drawing.Point(390, 249);
             this.pictureBox5.Name = "pictureBox5";
@@ -406,6 +330,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = global::Inlevingsspel.Properties.Resources.uk;
             this.pictureBox4.Location = new System.Drawing.Point(30, 249);
             this.pictureBox4.Name = "pictureBox4";
@@ -416,6 +341,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::Inlevingsspel.Properties.Resources.china;
             this.pictureBox3.Location = new System.Drawing.Point(755, 92);
             this.pictureBox3.Name = "pictureBox3";
@@ -426,6 +352,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::Inlevingsspel.Properties.Resources.usa;
             this.pictureBox2.Location = new System.Drawing.Point(390, 92);
             this.pictureBox2.Name = "pictureBox2";
@@ -436,11 +363,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::Inlevingsspel.Properties.Resources.duitsland;
             this.pictureBox1.Location = new System.Drawing.Point(30, 92);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(187, 126);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -450,35 +378,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 562);
             this.Controls.Add(this.btnoverzicht);
-            this.Controls.Add(this.btninfoperu);
             this.Controls.Add(this.btnperu);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btninfonigeria);
             this.Controls.Add(this.btnnigeria);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btninfovietnam);
             this.Controls.Add(this.btnvietnam);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btninfocongo);
             this.Controls.Add(this.btncongo);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btninfovk);
             this.Controls.Add(this.btnvk);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btninfochina);
             this.Controls.Add(this.btnchina);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.btninfousa);
             this.Controls.Add(this.btnusa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btninfoduitsland);
             this.Controls.Add(this.btnduitsland);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -511,32 +431,24 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnduitsland;
-        private System.Windows.Forms.Button btninfoduitsland;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btninfousa;
         private System.Windows.Forms.Button btnusa;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btninfochina;
         private System.Windows.Forms.Button btnchina;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btninfovk;
         private System.Windows.Forms.Button btnvk;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btninfocongo;
         private System.Windows.Forms.Button btncongo;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btninfovietnam;
         private System.Windows.Forms.Button btnvietnam;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btninfoperu;
         private System.Windows.Forms.Button btnperu;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btninfonigeria;
         private System.Windows.Forms.Button btnnigeria;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label8;
