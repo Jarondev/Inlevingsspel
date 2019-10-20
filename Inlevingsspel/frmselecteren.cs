@@ -17,7 +17,7 @@ namespace Inlevingsspel
             InitializeComponent();
         }
 
-        public static Boolean[] isLand = new bool[8];
+        public static Boolean[] isLand = new bool[8] {false, false, false, false, false, false, false, false};
         public static int LandHoeveelheid = 0;
         public static String[] LandGroep = new string[8];
         public static String naam;
@@ -93,6 +93,31 @@ namespace Inlevingsspel
             frmoverzicht frmoverzicht = new frmoverzicht();
             frmoverzicht.StartPosition = FormStartPosition.CenterParent;
             frmoverzicht.ShowDialog();
+        }
+
+        private void btnstarten_Click(object sender, EventArgs e)
+        {
+            if (!CheckLanden())
+            {
+                MessageBox.Show("Je hebt niet genoeg landen die meespelen!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        static Boolean CheckLanden()
+        {
+            Boolean check = false;
+            for (int i = 0, j = 0; i < 8; i++)
+            {
+                if (isLand[i])
+                {
+                    j++;
+                }
+                if (j >= 2)
+                {
+                    check = true;
+                }
+            }
+            return check;
         }
     }
 }

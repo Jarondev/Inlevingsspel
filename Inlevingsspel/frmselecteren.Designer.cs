@@ -94,6 +94,7 @@
             this.btnstarten.TabIndex = 1;
             this.btnstarten.Text = "Starten";
             this.btnstarten.UseVisualStyleBackColor = true;
+            this.btnstarten.Click += new System.EventHandler(this.btnstarten_Click);
             // 
             // label1
             // 
