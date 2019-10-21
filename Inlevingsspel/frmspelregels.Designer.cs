@@ -43,6 +43,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.btnsluiten = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +101,11 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
@@ -115,7 +126,7 @@
             // 
             this.label11.Location = new System.Drawing.Point(4, 253);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(489, 145);
+            this.label11.Size = new System.Drawing.Size(507, 145);
             this.label11.TabIndex = 10;
             this.label11.Text = resources.GetString("label11.Text");
             // 
@@ -185,11 +196,68 @@
             this.label13.TabIndex = 10;
             this.label13.Text = "Fase 4:";
             // 
+            // label14
+            // 
+            this.label14.Location = new System.Drawing.Point(4, 467);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(508, 64);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Het bouwen van gebouwen (zoals: ontginningsbedrijven, productiefabrieken, scholen" +
+    " en universiteiten, automatiseringseenheden, zuiveringsinstallaties).\r\n\r\n\r\n";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(4, 531);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(69, 20);
+            this.label15.TabIndex = 13;
+            this.label15.Text = "Fase 5:";
+            // 
+            // label16
+            // 
+            this.label16.Location = new System.Drawing.Point(4, 551);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(508, 23);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "Het genereren van geld en afval door de productiefabrieken.";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label17.Location = new System.Drawing.Point(4, 574);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(69, 20);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "Fase 6:";
+            // 
+            // label18
+            // 
+            this.label18.Location = new System.Drawing.Point(4, 594);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(508, 42);
+            this.label18.TabIndex = 16;
+            this.label18.Text = "Het kopen van de nog beschikbare aandelen (invloed) van zowel eigen land als van " +
+    "een vreemd land.";
+            // 
+            // btnsluiten
+            // 
+            this.btnsluiten.Location = new System.Drawing.Point(397, 386);
+            this.btnsluiten.Name = "btnsluiten";
+            this.btnsluiten.Size = new System.Drawing.Size(136, 30);
+            this.btnsluiten.TabIndex = 7;
+            this.btnsluiten.Text = "Sluiten";
+            this.btnsluiten.UseVisualStyleBackColor = true;
+            this.btnsluiten.Click += new System.EventHandler(this.btnsluiten_Click);
+            // 
             // frmspelregels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 390);
+            this.ClientSize = new System.Drawing.Size(563, 423);
+            this.Controls.Add(this.btnsluiten);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -221,5 +289,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnsluiten;
     }
 }

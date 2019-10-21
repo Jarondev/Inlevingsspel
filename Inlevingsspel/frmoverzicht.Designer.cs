@@ -123,6 +123,8 @@
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
+            this.btnsluiten = new System.Windows.Forms.Button();
+            this.label87 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -1060,11 +1062,31 @@
             this.label75.Text = "Geen";
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnsluiten
+            // 
+            this.btnsluiten.Location = new System.Drawing.Point(704, 505);
+            this.btnsluiten.Name = "btnsluiten";
+            this.btnsluiten.Size = new System.Drawing.Size(148, 33);
+            this.btnsluiten.TabIndex = 95;
+            this.btnsluiten.Text = "Sluiten";
+            this.btnsluiten.UseVisualStyleBackColor = true;
+            this.btnsluiten.Click += new System.EventHandler(this.btnsluiten_Click);
+            // 
+            // label87
+            // 
+            this.label87.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label87.Location = new System.Drawing.Point(184, 500);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(675, 2);
+            this.label87.TabIndex = 96;
+            // 
             // frmoverzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 505);
+            this.ClientSize = new System.Drawing.Size(864, 544);
+            this.Controls.Add(this.label87);
+            this.Controls.Add(this.btnsluiten);
             this.Controls.Add(this.label75);
             this.Controls.Add(this.label79);
             this.Controls.Add(this.label80);
@@ -1274,5 +1296,7 @@
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Button btnsluiten;
+        private System.Windows.Forms.Label label87;
     }
 }

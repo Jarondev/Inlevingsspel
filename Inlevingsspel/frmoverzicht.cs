@@ -16,5 +16,10 @@ namespace Inlevingsspel
         {
             InitializeComponent();
         }
+
+        private void btnsluiten_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
