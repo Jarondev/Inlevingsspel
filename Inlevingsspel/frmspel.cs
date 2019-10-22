@@ -12,6 +12,7 @@ namespace Inlevingsspel
 {
     public partial class frmspel : Form
     {
+        public static int[][] vs = new int[frmselecteren.LandHoeveelheid][];
         public frmspel()
         {
             InitializeComponent();

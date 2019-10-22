@@ -104,6 +104,7 @@ namespace Inlevingsspel
             {
                 this.Hide();
                 frmspel frmspeli = new frmspel();
+                frmspeli.StartPosition = FormStartPosition.CenterScreen;
                 frmspeli.ShowDialog();
                 this.Close();
             }
@@ -111,19 +112,13 @@ namespace Inlevingsspel
 
         static Boolean CheckLanden()
         {
-            Boolean check = false;
-            for (int i = 0, j = 0; i < 8; i++)
+            if(LandHoeveelheid >= 2)
             {
-                if (isLand[i])
-                {
-                    j++;
-                }
-                if (j >= 2)
-                {
-                    check = true;
-                }
+                return true;
+            } else
+            {
+                return false;
             }
-            return check;
         }
 
         private void btninfoduitsland_Click(object sender, EventArgs e)

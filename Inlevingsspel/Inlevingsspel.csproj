@@ -52,12 +52,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmhuidigland.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmhuidigland.Designer.cs">
-      <DependentUpon>frmhuidigland.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmoverzicht.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,9 +87,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmhuidigland.resx">
-      <DependentUpon>frmhuidigland.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmoverzicht.resx">
       <DependentUpon>frmoverzicht.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmgroepleider.resx">
       <DependentUpon>frmgroepleider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmspel.resx">
+      <DependentUpon>frmspel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmspelregels.resx">
       <DependentUpon>frmspelregels.cs</DependentUpon>
