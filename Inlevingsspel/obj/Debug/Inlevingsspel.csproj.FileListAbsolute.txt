@@ -11,3 +11,17 @@ D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inle
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmoverzicht.resources
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmgroepleider.resources
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmspelregels.resources
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\bin\Debug\Inlevingsspel.exe.config
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\bin\Debug\Inlevingsspel.exe
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\bin\Debug\Inlevingsspel.pdb
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.csprojAssemblyReference.cache
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.Form1.resources
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmoverzicht.resources
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmselecteren.resources
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmgroepleider.resources
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmspelregels.resources
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.Properties.Resources.resources
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.csproj.GenerateResource.cache
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.csproj.CoreCompileInputs.cache
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.exe
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.pdb
