@@ -185,5 +185,11 @@
   <ItemGroup>
     <None Include="Resources\90820894-shovel-and-pickaxe-icon-with-long-shadow-flat-design-style-round-icon-shovel-and-pick-axe-silhouette.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\energy+idea+knowledge+icon-1320162566623106204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47-512.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

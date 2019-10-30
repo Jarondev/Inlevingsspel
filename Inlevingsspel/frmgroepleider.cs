@@ -25,11 +25,26 @@ namespace Inlevingsspel
             }
             else
             {
-                frmselecteren.naam = txtnaam.Text;
-                this.Dispose();
+                if (TestInput(txtnaam.Text))
+                {
+                    frmselecteren.naam = txtnaam.Text;
+                    this.Dispose();
+                } else
+                {
+                    MessageBox.Show("Je moet een geldige naam ingeven! (Geen cijfers, speciale tekens of spaties)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
+        bool TestInput(string text)
+        {
+            bool resultaat = true;
+            for(int i = 0; i < text.Length; i++)
+            {
+                if (Convert.ToChar(text.ToLower().Substring(i, 1)) < 97 || Convert.ToChar(text.ToLower().Substring(i, 1)) > 122) resultaat = false;
+            }
+            return resultaat;
+        }
         private void btncancel_Click(object sender, EventArgs e)
         {
             this.Close();

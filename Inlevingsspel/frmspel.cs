@@ -15,6 +15,7 @@ namespace Inlevingsspel
         public static Land[] Landen = new Land[frmselecteren.LandHoeveelheid];
         public static int[,] aandelen = new int[frmselecteren.LandHoeveelheid, frmselecteren.LandHoeveelheid];
         public static int huidig = 0;
+        public static int fase = 1;
         public frmspel()
         {
             InitializeComponent();
@@ -40,7 +41,7 @@ namespace Inlevingsspel
                     Landen[i].Steenkool = 1;
                     Landen[i].Ijzer = 1;
                 }
-                if (frmselecteren.isLand[1])
+                else if (frmselecteren.isLand[1])
                 {
                     frmselecteren.isLand[1] = false;
                     Landen[i].Naam = "USA";
@@ -52,7 +53,7 @@ namespace Inlevingsspel
                     Landen[i].Olie = 1;
                     Landen[i].Ijzer = 1;
                 }
-                if (frmselecteren.isLand[2])
+                else if (frmselecteren.isLand[2])
                 {
                     frmselecteren.isLand[2] = false;
                     Landen[i].Naam = "China";
@@ -61,7 +62,7 @@ namespace Inlevingsspel
                     Landen[i].Geld = 300;
                     Landen[i].Steenkool = 2;
                 }
-                if (frmselecteren.isLand[3])
+                else if (frmselecteren.isLand[3])
                 {
                     frmselecteren.isLand[3] = false;
                     Landen[i].Naam = "UK";
@@ -71,7 +72,7 @@ namespace Inlevingsspel
                     Landen[i].Geld = 200;
                     Landen[i].Steenkool = 1;
                 }
-                if (frmselecteren.isLand[4])
+                else if (frmselecteren.isLand[4])
                 {
                     frmselecteren.isLand[4] = false;
                     Landen[i].Naam = "Congo";
@@ -82,7 +83,7 @@ namespace Inlevingsspel
                     Landen[i].Steenkool = 6;
                     Landen[i].Ijzer = 8;
                 }
-                if (frmselecteren.isLand[5])
+                else if (frmselecteren.isLand[5])
                 {
                     frmselecteren.isLand[5] = false;
                     Landen[i].Naam = "Vietnam";
@@ -93,7 +94,7 @@ namespace Inlevingsspel
                     Landen[i].Steenkool = 2;
                     Landen[i].Ijzer = 1;
                 }
-                if (frmselecteren.isLand[6])
+                else if (frmselecteren.isLand[6])
                 {
                     frmselecteren.isLand[6] = false;
                     Landen[i].Naam = "Nigeria";
@@ -104,7 +105,7 @@ namespace Inlevingsspel
                     Landen[i].Steenkool = 2;
                     Landen[i].Ijzer = 2;
                 }
-                if (frmselecteren.isLand[7])
+                else if (frmselecteren.isLand[7])
                 {
                     frmselecteren.isLand[7] = false;
                     Landen[i].Naam = "Peru";
@@ -122,6 +123,8 @@ namespace Inlevingsspel
             lblland.Text = "Huidig land: " + Landen[huidig].Naam;
             lblgroep.Text = "Groep van: " + Landen[huidig].Groepsnaam;
             lblgoud.Text = Landen[huidig].Geld.ToString();
+            lblkennis.Text = Landen[huidig].Kennis.ToString();
+            lblafval.Text = Landen[huidig].Afval.ToString();
             lbluni.Text = Landen[huidig].Uni.ToString();
             lblfabriek.Text = "";
             lblautomatisering.Text = Landen[huidig].Automatiseringtegoed.ToString();

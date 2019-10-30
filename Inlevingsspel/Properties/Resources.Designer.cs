@@ -73,6 +73,16 @@ namespace Inlevingsspel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _47_512 {
+            get {
+                object obj = ResourceManager.GetObject("_47_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _90820894_shovel_and_pickaxe_icon_with_long_shadow_flat_design_style_round_icon_shovel_and_pick_axe_silhouette {
             get {
                 object obj = ResourceManager.GetObject("_90820894_shovel_and_pickaxe_icon_with_long_shadow_flat_design_style_round_icon_s" +
@@ -137,6 +147,16 @@ namespace Inlevingsspel.Properties {
         internal static System.Drawing.Bitmap duitsland {
             get {
                 object obj = ResourceManager.GetObject("duitsland", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap energy_idea_knowledge_icon_1320162566623106204 {
+            get {
+                object obj = ResourceManager.GetObject("energy_idea_knowledge_icon_1320162566623106204", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
