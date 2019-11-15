@@ -17,6 +17,11 @@ namespace Inlevingsspel
             InitializeComponent();
         }
 
+        public frmoverzicht(int hoeveelheid)
+        {
+
+        }
+
         private void btnsluiten_Click(object sender, EventArgs e)
         {
             this.Close();

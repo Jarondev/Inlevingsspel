@@ -62,6 +62,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.overzichtLandenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -72,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -384,6 +387,23 @@
             this.pictureBox1.TabIndex = 86;
             this.pictureBox1.TabStop = false;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.overzichtLandenToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(979, 24);
+            this.menuStrip1.TabIndex = 117;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // overzichtLandenToolStripMenuItem
+            // 
+            this.overzichtLandenToolStripMenuItem.Name = "overzichtLandenToolStripMenuItem";
+            this.overzichtLandenToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
+            this.overzichtLandenToolStripMenuItem.Text = "Overzicht landen";
+            this.overzichtLandenToolStripMenuItem.Click += new System.EventHandler(this.overzichtLandenToolStripMenuItem_Click);
+            // 
             // frmspel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -422,8 +442,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblland);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmspel";
             this.Text = "frmspel";
@@ -438,6 +460,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,5 +502,7 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label lblkennis;
         private System.Windows.Forms.Label lblafval;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem overzichtLandenToolStripMenuItem;
     }
 }

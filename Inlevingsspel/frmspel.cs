@@ -133,6 +133,12 @@ namespace Inlevingsspel
             lblsteenkool.Text = Landen[huidig].Steenkool.ToString();
             lblijzer.Text = Landen[huidig].Ijzer.ToString();
         }
+
+        private void overzichtLandenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmoverzicht overzicht = new frmoverzicht(frmselecteren.LandHoeveelheid);
+            overzicht.Show();
+        }
     }
     public class Land
     {
