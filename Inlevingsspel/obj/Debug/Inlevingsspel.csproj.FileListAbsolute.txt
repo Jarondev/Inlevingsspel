@@ -26,3 +26,4 @@ C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Deb
 C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.exe
 C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.pdb
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmspel.resources
+C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmspel.resources

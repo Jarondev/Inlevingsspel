@@ -157,6 +157,9 @@ namespace Inlevingsspel
         public int Ijzer { get; set; } = 0;
 
         public Fabriek Fabrieki = new Fabriek();
+
+        public Automatisering automatiseringi = new Automatisering();
+
         public int Aandelen { get; set; } = 4;
 
         public int Fabriekentegoed { get; set; } = 0;
@@ -165,6 +168,14 @@ namespace Inlevingsspel
     }
 
     public class Fabriek
+    {
+        public bool Water { get; set; } = false;
+        public bool Ijzer { get; set; } = false;
+        public bool Steenkool { get; set; } = false;
+        public bool Olie { get; set; } = false;
+    }
+
+    public class Automatisering
     {
         public bool Water { get; set; } = false;
         public bool Ijzer { get; set; } = false;
