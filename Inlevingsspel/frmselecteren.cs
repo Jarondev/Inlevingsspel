@@ -120,10 +120,5 @@ namespace Inlevingsspel
                 return false;
             }
         }
-
-        private void btninfoduitsland_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

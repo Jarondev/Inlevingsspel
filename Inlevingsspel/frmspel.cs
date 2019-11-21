@@ -126,12 +126,26 @@ namespace Inlevingsspel
             lblkennis.Text = Landen[huidig].Kennis.ToString();
             lblafval.Text = Landen[huidig].Afval.ToString();
             lbluni.Text = Landen[huidig].Uni.ToString();
-            lblfabriek.Text = "";
-            lblautomatisering.Text = Landen[huidig].Automatiseringtegoed.ToString();
             lblwater.Text = Landen[huidig].Water.ToString();
             lblolie.Text = Landen[huidig].Olie.ToString();
             lblsteenkool.Text = Landen[huidig].Steenkool.ToString();
             lblijzer.Text = Landen[huidig].Ijzer.ToString();
+            if (Landen[huidig].Fabrieki.Water) lblwaterfabriek.Text = "Ja";
+            else lblwaterfabriek.Text = "Nee";
+            if (Landen[huidig].Fabrieki.Ijzer) lblijzerfabriek.Text = "Ja";
+            else lblijzerfabriek.Text = "Nee";
+            if (Landen[huidig].Fabrieki.Steenkool) lblsteenkoolfabriek.Text = "Ja";
+            else lblsteenkoolfabriek.Text = "Nee";
+            if (Landen[huidig].Fabrieki.Olie) lbloliefabriek.Text = "Ja";
+            else lbloliefabriek.Text = "Nee";
+            if (Landen[huidig].Automatiseringi.Water) lblwaterauto.Text = "Ja";
+            else lblwaterauto.Text = "Nee";
+            if (Landen[huidig].Automatiseringi.Ijzer) lblijzerauto.Text = "Ja";
+            else lblijzerauto.Text = "Nee";
+            if (Landen[huidig].Automatiseringi.Steenkool) lblsteenkoolauto.Text = "Ja";
+            else lblsteenkoolauto.Text = "Nee";
+            if (Landen[huidig].Automatiseringi.Olie) lblolieauto.Text = "Ja";
+            else lblolieauto.Text = "Nee";
         }
 
         private void overzichtLandenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -158,7 +172,7 @@ namespace Inlevingsspel
 
         public Fabriek Fabrieki = new Fabriek();
 
-        public Automatisering automatiseringi = new Automatisering();
+        public Automatisering Automatiseringi = new Automatisering();
 
         public int Aandelen { get; set; } = 4;
 
