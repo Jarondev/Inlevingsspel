@@ -146,13 +146,13 @@ namespace Inlevingsspel
             else lblsteenkoolauto.Text = "Nee";
             if (Landen[huidig].Automatiseringi.Olie) lblolieauto.Text = "Ja";
             else lblolieauto.Text = "Nee";
-            if (Landen[huidig].Fabriekentegoed >= 1)
+            if (Landen[huidig].Fabriekentegoed >= 1 && !(Landen[huidig].Fabrieki.Water && Landen[huidig].Fabrieki.Ijzer && Landen[huidig].Fabrieki.Steenkool && Landen[huidig].Fabrieki.Olie))
             {
                 lblfabriekentegoed.Visible = true;
                 lblfabriekentegoed.Text = "Te goed: " + Landen[huidig].Fabriekentegoed.ToString();
             }
             else lblfabriekentegoed.Visible = false;
-            if (Landen[huidig].Automatiseringtegoed >= 1)
+            if (Landen[huidig].Automatiseringtegoed >= 1 && !(Landen[huidig].Automatiseringi.Water && Landen[huidig].Automatiseringi.Ijzer && Landen[huidig].Automatiseringi.Steenkool && Landen[huidig].Automatiseringi.Olie))
             {
                 lblautotegoed.Text = "Te goed: " + Landen[huidig].Automatiseringtegoed.ToString();
                 lblautotegoed.Visible = true;
@@ -171,6 +171,7 @@ namespace Inlevingsspel
             frmtegoed frmtegoedi = new frmtegoed(0);
             frmtegoedi.StartPosition = FormStartPosition.CenterParent;
             frmtegoedi.ShowDialog();
+            frmspel_Shown(sender, e);
         }
 
         private void lblautotegoed_Click(object sender, EventArgs e)
@@ -178,6 +179,7 @@ namespace Inlevingsspel
             frmtegoed frmtegoedi = new frmtegoed(1);
             frmtegoedi.StartPosition = FormStartPosition.CenterParent;
             frmtegoedi.ShowDialog();
+            frmspel_Shown(sender, e);
         }
     }
     public class Land

@@ -28,7 +28,7 @@ namespace Inlevingsspel
                 if (TestInput(txtnaam.Text))
                 {
                     frmselecteren.naam = txtnaam.Text;
-                    this.Dispose();
+                    this.Close();
                 } else
                 {
                     MessageBox.Show("Je moet een geldige naam ingeven! (Geen cijfers, speciale tekens of spaties)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

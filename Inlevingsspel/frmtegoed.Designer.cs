@@ -30,7 +30,7 @@
         {
             this.btnsubmit = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxtegoed = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -42,6 +42,7 @@
             this.btnsubmit.TabIndex = 0;
             this.btnsubmit.Text = "Bevestig";
             this.btnsubmit.UseVisualStyleBackColor = true;
+            this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
             // 
             // btncancel
             // 
@@ -51,15 +52,16 @@
             this.btncancel.TabIndex = 1;
             this.btncancel.Text = "Annuleren";
             this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
-            // comboBox1
+            // cbxtegoed
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 52);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(252, 28);
-            this.comboBox1.TabIndex = 2;
+            this.cbxtegoed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxtegoed.FormattingEnabled = true;
+            this.cbxtegoed.Location = new System.Drawing.Point(12, 52);
+            this.cbxtegoed.Name = "cbxtegoed";
+            this.cbxtegoed.Size = new System.Drawing.Size(252, 28);
+            this.cbxtegoed.TabIndex = 2;
             // 
             // label1
             // 
@@ -77,7 +79,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(273, 151);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbxtegoed);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnsubmit);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -92,7 +94,7 @@
 
         private System.Windows.Forms.Button btnsubmit;
         private System.Windows.Forms.Button btncancel;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxtegoed;
         private System.Windows.Forms.Label label1;
     }
 }
