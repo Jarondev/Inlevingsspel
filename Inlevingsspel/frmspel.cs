@@ -146,12 +146,38 @@ namespace Inlevingsspel
             else lblsteenkoolauto.Text = "Nee";
             if (Landen[huidig].Automatiseringi.Olie) lblolieauto.Text = "Ja";
             else lblolieauto.Text = "Nee";
+            if (Landen[huidig].Fabriekentegoed >= 1)
+            {
+                lblfabriekentegoed.Visible = true;
+                lblfabriekentegoed.Text = "Te goed: " + Landen[huidig].Fabriekentegoed.ToString();
+            }
+            else lblfabriekentegoed.Visible = false;
+            if (Landen[huidig].Automatiseringtegoed >= 1)
+            {
+                lblautotegoed.Text = "Te goed: " + Landen[huidig].Automatiseringtegoed.ToString();
+                lblautotegoed.Visible = true;
+            }
+            else lblautotegoed.Visible = false;
         }
 
         private void overzichtLandenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmoverzicht overzicht = new frmoverzicht(frmselecteren.LandHoeveelheid);
             overzicht.Show();
+        }
+
+        private void lblfabriekentegoed_Click(object sender, EventArgs e)
+        {
+            frmtegoed frmtegoedi = new frmtegoed(0);
+            frmtegoedi.StartPosition = FormStartPosition.CenterParent;
+            frmtegoedi.ShowDialog();
+        }
+
+        private void lblautotegoed_Click(object sender, EventArgs e)
+        {
+            frmtegoed frmtegoedi = new frmtegoed(1);
+            frmtegoedi.StartPosition = FormStartPosition.CenterParent;
+            frmtegoedi.ShowDialog();
         }
     }
     public class Land
@@ -174,7 +200,7 @@ namespace Inlevingsspel
 
         public Automatisering Automatiseringi = new Automatisering();
 
-        public int Aandelen { get; set; } = 4;
+        public int[] Aandelen = new int[frmselecteren.LandHoeveelheid];
 
         public int Fabriekentegoed { get; set; } = 0;
 

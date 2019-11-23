@@ -78,6 +78,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.lblautotegoed = new System.Windows.Forms.Label();
+            this.lblfabriekentegoed = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -234,18 +236,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(520, 195);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 20);
+            this.label3.Size = new System.Drawing.Size(48, 20);
             this.label3.TabIndex = 111;
-            this.label3.Text = "Afval";
+            this.label3.Text = "Afval:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(520, 152);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.Size = new System.Drawing.Size(61, 20);
             this.label4.TabIndex = 112;
-            this.label4.Text = "Kennis";
+            this.label4.Text = "Kennis:";
             // 
             // lblkennis
             // 
@@ -546,11 +548,35 @@
             this.label16.TabIndex = 139;
             this.label16.Text = "Water:";
             // 
+            // lblautotegoed
+            // 
+            this.lblautotegoed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblautotegoed.Location = new System.Drawing.Point(924, 278);
+            this.lblautotegoed.Name = "lblautotegoed";
+            this.lblautotegoed.Size = new System.Drawing.Size(84, 20);
+            this.lblautotegoed.TabIndex = 143;
+            this.lblautotegoed.Text = "label7";
+            this.lblautotegoed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblautotegoed.Click += new System.EventHandler(this.lblautotegoed_Click);
+            // 
+            // lblfabriekentegoed
+            // 
+            this.lblfabriekentegoed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblfabriekentegoed.Location = new System.Drawing.Point(893, 108);
+            this.lblfabriekentegoed.Name = "lblfabriekentegoed";
+            this.lblfabriekentegoed.Size = new System.Drawing.Size(115, 20);
+            this.lblfabriekentegoed.TabIndex = 144;
+            this.lblfabriekentegoed.Text = "label7";
+            this.lblfabriekentegoed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblfabriekentegoed.Click += new System.EventHandler(this.lblfabriekentegoed_Click);
+            // 
             // frmspel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 443);
+            this.Controls.Add(this.lblfabriekentegoed);
+            this.Controls.Add(this.lblautotegoed);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
@@ -603,7 +629,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "frmspel";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "frmspel";
             this.Shown += new System.EventHandler(this.frmspel_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -674,5 +702,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblautotegoed;
+        private System.Windows.Forms.Label lblfabriekentegoed;
     }
 }
