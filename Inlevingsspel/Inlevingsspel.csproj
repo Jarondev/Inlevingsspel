@@ -53,6 +53,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmgrondstoffen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgrondstoffen.Designer.cs">
+      <DependentUpon>frmgrondstoffen.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmtegoed.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgrondstoffen.resx">
+      <DependentUpon>frmgrondstoffen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmoverzicht.resx">
       <DependentUpon>frmoverzicht.cs</DependentUpon>

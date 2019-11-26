@@ -13,7 +13,6 @@ namespace Inlevingsspel
     public partial class frmspel : Form
     {
         public static Land[] Landen = new Land[frmselecteren.LandHoeveelheid];
-        public static int[,] aandelen = new int[frmselecteren.LandHoeveelheid, frmselecteren.LandHoeveelheid];
         public static int huidig = 0;
         public static int fase = 1;
         public frmspel()
@@ -22,6 +21,10 @@ namespace Inlevingsspel
             for(int i = 0; i <frmselecteren.LandHoeveelheid; i++)
             {
                 Landen[i] = new Land();
+                for(int j = 0; j < frmselecteren.LandHoeveelheid; j++)
+                {
+                    Landen[i].Aandelen[j] = 0;
+                }
             }
             InitialiseerLanden();
         }
@@ -33,88 +36,108 @@ namespace Inlevingsspel
                 if (frmselecteren.isLand[0])
                 {
                     frmselecteren.isLand[0] = false;
+                    Landen[i].LandID = i;
+                    Landen[i].Aandelen[i] = 1;
                     Landen[i].Naam = "Duitsland";
                     Landen[i].Groepsnaam = frmselecteren.LandGroep[0];
+                    Landen[i].Uni = 1;
+                    Landen[i].Kennispb = 2;
                     Landen[i].Fabriekentegoed = 2;
                     Landen[i].Automatiseringtegoed = 1;
                     Landen[i].Geld = 200;
-                    Landen[i].Steenkool = 1;
-                    Landen[i].Ijzer = 1;
+                    Landen[i].Steenkoolpb = 1;
+                    Landen[i].Ijzerpb = 1;
                 }
                 else if (frmselecteren.isLand[1])
                 {
                     frmselecteren.isLand[1] = false;
+                    Landen[i].LandID = i;
+                    Landen[i].Aandelen[i] = 1;
                     Landen[i].Naam = "USA";
                     Landen[i].Groepsnaam = frmselecteren.LandGroep[1];
                     Landen[i].Uni = 1;
+                    Landen[i].Kennispb = 2;
                     Landen[i].Fabriekentegoed = 3;
                     Landen[i].Geld = 400;
-                    Landen[i].Water = 1;
-                    Landen[i].Olie = 1;
-                    Landen[i].Ijzer = 1;
+                    Landen[i].Waterpb = 1;
+                    Landen[i].Oliepb = 1;
+                    Landen[i].Ijzerpb = 1;
                 }
                 else if (frmselecteren.isLand[2])
                 {
                     frmselecteren.isLand[2] = false;
+                    Landen[i].LandID = i;
+                    Landen[i].Aandelen[i] = 1;
                     Landen[i].Naam = "China";
                     Landen[i].Groepsnaam = frmselecteren.LandGroep[2];
                     Landen[i].Fabriekentegoed = 4;
                     Landen[i].Geld = 300;
-                    Landen[i].Steenkool = 2;
+                    Landen[i].Steenkoolpb = 2;
                 }
                 else if (frmselecteren.isLand[3])
                 {
                     frmselecteren.isLand[3] = false;
+                    Landen[i].LandID = i;
+                    Landen[i].Aandelen[i] = 1;
                     Landen[i].Naam = "UK";
                     Landen[i].Groepsnaam = frmselecteren.LandGroep[3];
                     Landen[i].Uni = 1;
+                    Landen[i].Kennispb = 2;
                     Landen[i].Fabriekentegoed = 2;
                     Landen[i].Geld = 200;
-                    Landen[i].Steenkool = 1;
+                    Landen[i].Steenkoolpb = 1;
                 }
                 else if (frmselecteren.isLand[4])
                 {
                     frmselecteren.isLand[4] = false;
+                    Landen[i].LandID = i;
+                    Landen[i].Aandelen[i] = 1;
                     Landen[i].Naam = "Congo";
                     Landen[i].Groepsnaam = frmselecteren.LandGroep[4];
                     Landen[i].Geld = 150;
-                    Landen[i].Water = 4;
-                    Landen[i].Olie = 6;
-                    Landen[i].Steenkool = 6;
-                    Landen[i].Ijzer = 8;
+                    Landen[i].Waterpb = 4;
+                    Landen[i].Oliepb = 6;
+                    Landen[i].Steenkoolpb = 6;
+                    Landen[i].Ijzerpb = 8;
                 }
                 else if (frmselecteren.isLand[5])
                 {
                     frmselecteren.isLand[5] = false;
+                    Landen[i].LandID = i;
+                    Landen[i].Aandelen[i] = 1;
                     Landen[i].Naam = "Vietnam";
                     Landen[i].Groepsnaam = frmselecteren.LandGroep[5];
                     Landen[i].Geld = 150;
-                    Landen[i].Water = 2;
-                    Landen[i].Olie = 1;
-                    Landen[i].Steenkool = 2;
-                    Landen[i].Ijzer = 1;
+                    Landen[i].Waterpb = 2;
+                    Landen[i].Oliepb = 1;
+                    Landen[i].Steenkoolpb = 2;
+                    Landen[i].Ijzerpb = 1;
                 }
                 else if (frmselecteren.isLand[6])
                 {
                     frmselecteren.isLand[6] = false;
+                    Landen[i].LandID = i;
+                    Landen[i].Aandelen[i] = 1;
                     Landen[i].Naam = "Nigeria";
                     Landen[i].Groepsnaam = frmselecteren.LandGroep[6];
                     Landen[i].Geld = 100;
-                    Landen[i].Water = 2;
-                    Landen[i].Olie = 8;
-                    Landen[i].Steenkool = 2;
-                    Landen[i].Ijzer = 2;
+                    Landen[i].Waterpb = 2;
+                    Landen[i].Oliepb = 8;
+                    Landen[i].Steenkoolpb = 2;
+                    Landen[i].Ijzerpb = 2;
                 }
                 else if (frmselecteren.isLand[7])
                 {
                     frmselecteren.isLand[7] = false;
+                    Landen[i].LandID = i;
+                    Landen[i].Aandelen[i] = 1;
                     Landen[i].Naam = "Peru";
                     Landen[i].Groepsnaam = frmselecteren.LandGroep[7];
                     Landen[i].Geld = 100;
-                    Landen[i].Water = 1;
-                    Landen[i].Olie = 1;
-                    Landen[i].Steenkool = 4;
-                    Landen[i].Ijzer = 6;
+                    Landen[i].Waterpb = 1;
+                    Landen[i].Oliepb = 1;
+                    Landen[i].Steenkoolpb = 4;
+                    Landen[i].Ijzerpb = 6;
                 }
             }
         }
@@ -158,6 +181,14 @@ namespace Inlevingsspel
                 lblautotegoed.Visible = true;
             }
             else lblautotegoed.Visible = false;
+            if(fase == 1)
+            {
+                fase++;
+                frmgrondstoffen frmgrondstoffeni = new frmgrondstoffen();
+                frmgrondstoffeni.StartPosition = FormStartPosition.CenterParent;
+                frmgrondstoffeni.ShowDialog();
+                frmspel_Shown(sender, e);
+            }
         }
 
         private void overzichtLandenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -182,25 +213,31 @@ namespace Inlevingsspel
     }
     public class Land
     {
+        public int LandID { get; set; }
         public string Naam { get; set; } = "";
         public string Groepsnaam { get; set; } = "";
+        public int[] Aandelen { get; set; } = new int[frmselecteren.LandHoeveelheid];
         public int Geld { get; set; } = 0;
+        public int Geldpb { get; set; } = 0;
         public int Kennis { get; set; } = 0;
+        public int Kennispb { get; set; } = 0;
         public int Afval { get; set; } = 0;
-        public int Auto { get; set; } = 0;
+        public int Afvalpb { get; set; } = 0;
         public int School { get; set; } = 0;
         public int Uni { get; set; } = 0;
         public int Zuivering { get; set; } = 0;
         public int Water { get; set; } = 0;
+        public int Waterpb { get; set; } = 0;
         public int Olie { get; set; } = 0;
+        public int Oliepb { get; set; } = 0;
         public int Steenkool { get; set; } = 0;
+        public int Steenkoolpb { get; set; } = 0;
         public int Ijzer { get; set; } = 0;
+        public int Ijzerpb { get; set; } = 0;
 
         public Fabriek Fabrieki = new Fabriek();
 
         public Automatisering Automatiseringi = new Automatisering();
-
-        public int[] Aandelen = new int[frmselecteren.LandHoeveelheid];
 
         public int Fabriekentegoed { get; set; } = 0;
 
