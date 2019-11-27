@@ -28,3 +28,21 @@ C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Deb
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmspel.resources
 C:\Users\RLL6ib\Documents\De Vrieze Jaron\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmspel.resources
 D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmtegoed.resources
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\bin\Debug\Inlevingsspel.exe.config
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\bin\Debug\Inlevingsspel.exe
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\bin\Debug\Inlevingsspel.pdb
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.csprojAssemblyReference.cache
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.Form1.resources
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmoverzicht.resources
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmselecteren.resources
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmgroepleider.resources
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmspel.resources
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmspelregels.resources
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmtegoed.resources
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.Properties.Resources.resources
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.csproj.GenerateResource.cache
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.csproj.CoreCompileInputs.cache
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.exe
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.pdb
+C:\Users\RLLNOLC\Documents\Jaron\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmgrondstoffen.resources
+D:\Users\Jaron\Desktop\Informatica\C#\Inlevingsspel\Inlevingsspel\obj\Debug\Inlevingsspel.frmgrondstoffen.resources
