@@ -31,5 +31,10 @@ namespace Inlevingsspel
             frmspel.Landen[frmspel.huidig].Steenkool += frmspel.Landen[frmspel.huidig].Steenkoolpb;
             frmspel.Landen[frmspel.huidig].Ijzer += frmspel.Landen[frmspel.huidig].Ijzerpb;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

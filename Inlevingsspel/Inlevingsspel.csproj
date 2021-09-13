@@ -89,6 +89,17 @@
     <Compile Include="frmgroepleider.Designer.cs">
       <DependentUpon>frmgroepleider.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gebouwen\Automatisering.cs" />
+    <Compile Include="Gebouwen\Fabriek.cs" />
+    <Compile Include="Landen\Congo.cs" />
+    <Compile Include="Landen\Duitsland.cs" />
+    <Compile Include="Landen\Land.cs" />
+    <Compile Include="Landen\China.cs" />
+    <Compile Include="Landen\Nigeria.cs" />
+    <Compile Include="Landen\Peru.cs" />
+    <Compile Include="Landen\UK.cs" />
+    <Compile Include="Landen\USA.cs" />
+    <Compile Include="Landen\Vietnam.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmspelregels.cs">
