@@ -61,6 +61,7 @@ namespace Inlevingsspel
         {
             lblland.Text = "Huidig land: " + Landen[huidig].Naam;
             lblgroep.Text = "Groep van: " + Landen[huidig].Groepsnaam;
+
             lblgoud.Text = Landen[huidig].Geld.ToString();
             lblkennis.Text = Landen[huidig].Kennis.ToString();
             lblafval.Text = Landen[huidig].Afval.ToString();
@@ -69,22 +70,16 @@ namespace Inlevingsspel
             lblolie.Text = Landen[huidig].Olie.ToString();
             lblsteenkool.Text = Landen[huidig].Steenkool.ToString();
             lblijzer.Text = Landen[huidig].Ijzer.ToString();
-            if (Landen[huidig].Fabriek.Water) lblwaterfabriek.Text = "Ja";
-            else lblwaterfabriek.Text = "Nee";
-            if (Landen[huidig].Fabriek.Ijzer) lblijzerfabriek.Text = "Ja";
-            else lblijzerfabriek.Text = "Nee";
-            if (Landen[huidig].Fabriek.Steenkool) lblsteenkoolfabriek.Text = "Ja";
-            else lblsteenkoolfabriek.Text = "Nee";
-            if (Landen[huidig].Fabriek.Olie) lbloliefabriek.Text = "Ja";
-            else lbloliefabriek.Text = "Nee";
-            if (Landen[huidig].Automatisering.Water) lblwaterauto.Text = "Ja";
-            else lblwaterauto.Text = "Nee";
-            if (Landen[huidig].Automatisering.Ijzer) lblijzerauto.Text = "Ja";
-            else lblijzerauto.Text = "Nee";
-            if (Landen[huidig].Automatisering.Steenkool) lblsteenkoolauto.Text = "Ja";
-            else lblsteenkoolauto.Text = "Nee";
-            if (Landen[huidig].Automatisering.Olie) lblolieauto.Text = "Ja";
-            else lblolieauto.Text = "Nee";
+
+            lblwaterfabriek.Text = Util.BooleanToJaNee(Landen[huidig].Fabriek.Water);
+            lblijzerfabriek.Text = Util.BooleanToJaNee(Landen[huidig].Fabriek.Ijzer);
+            lblsteenkoolfabriek.Text = Util.BooleanToJaNee(Landen[huidig].Fabriek.Steenkool);
+            lbloliefabriek.Text = Util.BooleanToJaNee(Landen[huidig].Fabriek.Olie);
+            lblwaterauto.Text = Util.BooleanToJaNee(Landen[huidig].Automatisering.Water);
+            lblijzerauto.Text = Util.BooleanToJaNee(Landen[huidig].Automatisering.Ijzer);
+            lblsteenkoolauto.Text = Util.BooleanToJaNee(Landen[huidig].Automatisering.Steenkool);
+            lblolieauto.Text = Util.BooleanToJaNee(Landen[huidig].Automatisering.Olie);
+
             if (Landen[huidig].Fabriekentegoed >= 1 
                 && !(Landen[huidig].Fabriek.Water 
                 && Landen[huidig].Fabriek.Ijzer 
