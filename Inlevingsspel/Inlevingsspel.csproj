@@ -108,6 +108,7 @@
     <Compile Include="frmspelregels.Designer.cs">
       <DependentUpon>frmspelregels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

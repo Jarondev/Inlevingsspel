@@ -30,28 +30,28 @@ namespace Inlevingsspel
                 switch(landID)
                 {
                     case 0:
-                        Landen[landID] = new Duitsland(landID);
+                        Landen[i] = new Duitsland(i);
                         break;
                     case 1:
-                        Landen[landID] = new USA(landID);
+                        Landen[i] = new USA(i);
                         break;
                     case 2:
-                        Landen[landID] = new China(landID);
+                        Landen[i] = new China(i);
                         break;
                     case 3:
-                        Landen[landID] = new UK(landID);
+                        Landen[i] = new UK(i);
                         break;
                     case 4:
-                        Landen[landID] = new Congo(landID);
+                        Landen[i] = new Congo(i);
                         break;
                     case 5:
-                        Landen[landID] = new Vietnam(landID);
+                        Landen[i] = new Vietnam(i);
                         break;
                     case 6:
-                        Landen[landID] = new Nigeria(landID);
+                        Landen[i] = new Nigeria(i);
                         break;
                     case 7:
-                        Landen[landID] = new Peru(landID);
+                        Landen[i] = new Peru(i);
                         break;
                 }
                 frmselecteren.isLand[landID] = false;
@@ -112,7 +112,7 @@ namespace Inlevingsspel
 
         private void overzichtLandenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmoverzicht overzicht = new frmoverzicht(frmselecteren.LandHoeveelheid);
+            frmoverzicht overzicht = new frmoverzicht();
             overzicht.Show();
         }
 
