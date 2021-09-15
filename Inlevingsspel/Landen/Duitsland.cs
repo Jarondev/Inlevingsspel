@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Inlevingsspel.Constants;
 
 namespace Inlevingsspel.Landen
 {
@@ -11,16 +7,15 @@ namespace Inlevingsspel.Landen
         public Duitsland(int landID)
         {
             LandID = landID;
-            Naam = "Duitsland";
+            Naam = LandConstants.DuitslandNaam;
             Aandelen[LandID] = 1;
             Groepsnaam = frmselecteren.LandGroep[0];
-            Uni = 1;
-            Kennispb = 2;
-            Fabriekentegoed = 2;
-            Automatiseringtegoed = 1;
-            Geld = 200;
-            Steenkoolpb = 1;
-            Ijzerpb = 1;
+            Uni = LandConstants.DuitslandUni;
+            Fabriekentegoed = LandConstants.DuitslandFabriekenTeGoed;
+            Automatiseringtegoed = LandConstants.DuitslandAutomatiseringTeGoed;
+            Geld = LandConstants.DuitslandGeld;
+            Steenkoolpb = LandConstants.DuitslandSteenkoolPb;
+            Ijzerpb = LandConstants.DuitslandIjzerPb;
         }
     }
 }

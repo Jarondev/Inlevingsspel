@@ -1,7 +1,6 @@
-﻿
-namespace Inlevingsspel
+﻿namespace Inlevingsspel
 {
-    partial class frmoverzicht
+    partial class frmstartoverzicht
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +28,7 @@ namespace Inlevingsspel
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmoverzicht));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmstartoverzicht));
             this.label00 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();

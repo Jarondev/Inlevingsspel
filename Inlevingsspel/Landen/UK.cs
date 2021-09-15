@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Inlevingsspel.Constants;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,12 @@ namespace Inlevingsspel.Landen
         {
             LandID = landID;
             Aandelen[landID] = 1;
-            Naam = "UK";
+            Naam = LandConstants.UKNaam;
             Groepsnaam = frmselecteren.LandGroep[3];
-            Uni = 1;
-            Kennispb = 2;
-            Fabriekentegoed = 2;
-            Geld = 200;
-            Steenkoolpb = 1;
+            Geld = LandConstants.UKGeld;
+            Uni = LandConstants.UKUni;
+            Fabriekentegoed = LandConstants.UKFabriekenTeGoed;
+            Steenkoolpb = LandConstants.UKSteenkoolPb;
         }
     }
 }

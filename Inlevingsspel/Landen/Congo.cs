@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Inlevingsspel.Constants;
 
 namespace Inlevingsspel.Landen
 {
@@ -12,13 +8,13 @@ namespace Inlevingsspel.Landen
         {
             LandID = landID;
             Aandelen[landID] = 1;
-            Naam = "Congo";
+            Naam = LandConstants.CongoNaam;
             Groepsnaam = frmselecteren.LandGroep[4];
-            Geld = 150;
-            Waterpb = 4;
-            Oliepb = 6;
-            Steenkoolpb = 6;
-            Ijzerpb = 8;
+            Geld = LandConstants.CongoGeld;
+            Waterpb = LandConstants.CongoWaterPb;
+            Oliepb = LandConstants.CongoOliePb;
+            Steenkoolpb = LandConstants.CongoSteenkoolPb;
+            Ijzerpb = LandConstants.CongoIjzerPb;
         }
     }
 }

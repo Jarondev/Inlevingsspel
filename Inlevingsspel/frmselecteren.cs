@@ -90,7 +90,7 @@ namespace Inlevingsspel
 
         private void btnoverzicht_Click(object sender, EventArgs e)
         {
-            frmoverzicht frmoverzicht = new frmoverzicht();
+            frmstartoverzicht frmoverzicht = new frmstartoverzicht();
             frmoverzicht.StartPosition = FormStartPosition.CenterParent;
             frmoverzicht.ShowDialog();
         }

@@ -112,7 +112,7 @@ namespace Inlevingsspel
 
         private void overzichtLandenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmoverzicht overzicht = new frmoverzicht();
+            frmstartoverzicht overzicht = new frmstartoverzicht();
             overzicht.Show();
         }
 
