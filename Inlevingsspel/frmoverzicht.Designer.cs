@@ -37,11 +37,8 @@ namespace Inlevingsspel
             this.lblgrondstoffen = new System.Windows.Forms.Label();
             this.lbllijn3 = new System.Windows.Forms.Label();
             this.lbluniversiteit = new System.Windows.Forms.Label();
-            this.label02 = new System.Windows.Forms.Label();
             this.lblfabriek = new System.Windows.Forms.Label();
-            this.label03 = new System.Windows.Forms.Label();
             this.lblautomatisering = new System.Windows.Forms.Label();
-            this.label04 = new System.Windows.Forms.Label();
             this.lblwater = new System.Windows.Forms.Label();
             this.lblolie = new System.Windows.Forms.Label();
             this.lblsteenkool = new System.Windows.Forms.Label();
@@ -54,12 +51,18 @@ namespace Inlevingsspel
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label07 = new System.Windows.Forms.Label();
-            this.label06 = new System.Windows.Forms.Label();
-            this.label05 = new System.Windows.Forms.Label();
-            this.label08 = new System.Windows.Forms.Label();
             this.btnsluiten = new System.Windows.Forms.Button();
             this.lbllijn4 = new System.Windows.Forms.Label();
+            this.lbllijn5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -68,6 +71,10 @@ namespace Inlevingsspel
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // lbllijn1
@@ -133,16 +140,6 @@ namespace Inlevingsspel
             this.lbluniversiteit.TabIndex = 24;
             this.lbluniversiteit.Text = "Universiteit";
             // 
-            // label02
-            // 
-            this.label02.AutoSize = true;
-            this.label02.Location = new System.Drawing.Point(204, 138);
-            this.label02.Name = "label02";
-            this.label02.Size = new System.Drawing.Size(18, 20);
-            this.label02.TabIndex = 26;
-            this.label02.Text = "1";
-            this.label02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblfabriek
             // 
             this.lblfabriek.AutoSize = true;
@@ -152,16 +149,6 @@ namespace Inlevingsspel
             this.lblfabriek.TabIndex = 35;
             this.lblfabriek.Text = "Fabriek";
             // 
-            // label03
-            // 
-            this.label03.AutoSize = true;
-            this.label03.Location = new System.Drawing.Point(204, 177);
-            this.label03.Name = "label03";
-            this.label03.Size = new System.Drawing.Size(18, 20);
-            this.label03.TabIndex = 36;
-            this.label03.Text = "2";
-            this.label03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblautomatisering
             // 
             this.lblautomatisering.AutoSize = true;
@@ -170,16 +157,6 @@ namespace Inlevingsspel
             this.lblautomatisering.Size = new System.Drawing.Size(116, 20);
             this.lblautomatisering.TabIndex = 44;
             this.lblautomatisering.Text = "Automatisering";
-            // 
-            // label04
-            // 
-            this.label04.AutoSize = true;
-            this.label04.Location = new System.Drawing.Point(204, 216);
-            this.label04.Name = "label04";
-            this.label04.Size = new System.Drawing.Size(18, 20);
-            this.label04.TabIndex = 46;
-            this.label04.Text = "1";
-            this.label04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblwater
             // 
@@ -297,49 +274,9 @@ namespace Inlevingsspel
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // label07
-            // 
-            this.label07.AutoSize = true;
-            this.label07.Location = new System.Drawing.Point(204, 364);
-            this.label07.Name = "label07";
-            this.label07.Size = new System.Drawing.Size(18, 20);
-            this.label07.TabIndex = 78;
-            this.label07.Text = "1";
-            this.label07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label06
-            // 
-            this.label06.AutoSize = true;
-            this.label06.Location = new System.Drawing.Point(189, 325);
-            this.label06.Name = "label06";
-            this.label06.Size = new System.Drawing.Size(49, 20);
-            this.label06.TabIndex = 70;
-            this.label06.Text = "Geen";
-            this.label06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label05
-            // 
-            this.label05.AutoSize = true;
-            this.label05.Location = new System.Drawing.Point(189, 286);
-            this.label05.Name = "label05";
-            this.label05.Size = new System.Drawing.Size(49, 20);
-            this.label05.TabIndex = 62;
-            this.label05.Text = "Geen";
-            this.label05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label08
-            // 
-            this.label08.AutoSize = true;
-            this.label08.Location = new System.Drawing.Point(204, 403);
-            this.label08.Name = "label08";
-            this.label08.Size = new System.Drawing.Size(18, 20);
-            this.label08.TabIndex = 86;
-            this.label08.Text = "1";
-            this.label08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnsluiten
             // 
-            this.btnsluiten.Location = new System.Drawing.Point(695, 443);
+            this.btnsluiten.Location = new System.Drawing.Point(702, 639);
             this.btnsluiten.Name = "btnsluiten";
             this.btnsluiten.Size = new System.Drawing.Size(148, 33);
             this.btnsluiten.TabIndex = 95;
@@ -350,22 +287,122 @@ namespace Inlevingsspel
             // lbllijn4
             // 
             this.lbllijn4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbllijn4.Location = new System.Drawing.Point(175, 438);
+            this.lbllijn4.Location = new System.Drawing.Point(175, 451);
             this.lbllijn4.Name = "lbllijn4";
             this.lbllijn4.Size = new System.Drawing.Size(675, 2);
             this.lbllijn4.TabIndex = 96;
+            // 
+            // lbllijn5
+            // 
+            this.lbllijn5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbllijn5.Location = new System.Drawing.Point(175, 630);
+            this.lbllijn5.Name = "lbllijn5";
+            this.lbllijn5.Size = new System.Drawing.Size(675, 2);
+            this.lbllijn5.TabIndex = 110;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(54, 595);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 20);
+            this.label6.TabIndex = 105;
+            this.label6.Text = "Ijzer";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(11, 586);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 104;
+            this.pictureBox9.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(54, 556);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 20);
+            this.label7.TabIndex = 103;
+            this.label7.Text = "Steenkool";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(11, 545);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 102;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(54, 517);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(36, 20);
+            this.label8.TabIndex = 101;
+            this.label8.Text = "Olie";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Inlevingsspel.Properties.Resources.car_engine_oil_icon_png_35_v2;
+            this.pictureBox11.Location = new System.Drawing.Point(11, 508);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 100;
+            this.pictureBox11.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(54, 478);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 20);
+            this.label9.TabIndex = 99;
+            this.label9.Text = "Water";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Inlevingsspel.Properties.Resources.drop_ink_oil_water_blue_round_512;
+            this.pictureBox12.Location = new System.Drawing.Point(11, 471);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 98;
+            this.pictureBox12.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(12, 442);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(83, 20);
+            this.label10.TabIndex = 97;
+            this.label10.Text = "Per beurt";
             // 
             // frmoverzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 488);
+            this.ClientSize = new System.Drawing.Size(864, 684);
+            this.Controls.Add(this.lbllijn5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lbllijn4);
             this.Controls.Add(this.btnsluiten);
-            this.Controls.Add(this.label08);
-            this.Controls.Add(this.label07);
-            this.Controls.Add(this.label06);
-            this.Controls.Add(this.label05);
             this.Controls.Add(this.lblijzer);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.lblsteenkool);
@@ -374,13 +411,10 @@ namespace Inlevingsspel
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.lblwater);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.label04);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.lblautomatisering);
-            this.Controls.Add(this.label03);
             this.Controls.Add(this.lblfabriek);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label02);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lbluniversiteit);
             this.Controls.Add(this.pictureBox1);
@@ -405,6 +439,10 @@ namespace Inlevingsspel
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,13 +458,10 @@ namespace Inlevingsspel
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbluniversiteit;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label02;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblfabriek;
-        private System.Windows.Forms.Label label03;
         private System.Windows.Forms.Label lblautomatisering;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label04;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label lblwater;
         private System.Windows.Forms.Label lblolie;
@@ -435,11 +470,17 @@ namespace Inlevingsspel
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label lblijzer;
-        private System.Windows.Forms.Label label07;
-        private System.Windows.Forms.Label label06;
-        private System.Windows.Forms.Label label05;
-        private System.Windows.Forms.Label label08;
         private System.Windows.Forms.Button btnsluiten;
         private System.Windows.Forms.Label lbllijn4;
+        private System.Windows.Forms.Label lbllijn5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Label label10;
     }
 }

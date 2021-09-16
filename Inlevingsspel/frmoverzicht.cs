@@ -33,6 +33,7 @@ namespace Inlevingsspel
             lbllijn2.Size = lineSize;
             lbllijn3.Size = lineSize;
             lbllijn4.Size = lineSize;
+            lbllijn5.Size = lineSize;
 
             Width = 85 * (1 + landenCount) + 155;
             btnsluiten.Location = new Point(Width - 185, btnsluiten.Location.Y);
@@ -65,28 +66,128 @@ namespace Inlevingsspel
                     Location = new Point(165 + (85 * i), 138)
                 };
 
-                Label lblLandFabriek = new Label()
+                ComboBox cbxLandFabriek = new ComboBox()
                 {
-                    Text = "Placeholder",
-                    TextAlign = ContentAlignment.MiddleCenter,
+                    DropDownStyle = ComboBoxStyle.DropDownList,
+                    Width = 80,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 177)
+                    Location = new Point(180 + (85 * i), 177)
                 };
 
-                Label lblLandAutomatisering = new Label()
+                FillFabriekenComboBox(cbxLandFabriek, land.Fabriek);
+
+                ComboBox cbxLandAutomatisering = new ComboBox()
                 {
-                    Text = "Placeholder",
+                    DropDownStyle = ComboBoxStyle.DropDownList,
+                    Width = 80,
+                    Dock = DockStyle.None,
+                    Location = new Point(180 + (85 * i), 216)
+                };
+
+                FillAutomatiseringComboBox(cbxLandAutomatisering, land.Automatisering);
+
+                Label lblLandWater = new Label()
+                {
+                    Text = land.Water.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 216)
+                    Location = new Point(165 + (85 * i), 286)
+                };
+
+                Label lblLandOlie = new Label()
+                {
+                    Text = land.Olie.ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.None,
+                    Location = new Point(165 + (85 * i), 325)
+                };
+
+                Label lblLandSteenkool = new Label()
+                {
+                    Text = land.Steenkool.ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.None,
+                    Location = new Point(165 + (85 * i), 364)
+                };
+
+                Label lblLandIjzer = new Label()
+                {
+                    Text = land.Ijzer.ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.None,
+                    Location = new Point(165 + (85 * i), 403)
+                };
+
+                Label lblLandWaterPb = new Label()
+                {
+                    Text = land.Waterpb.ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.None,
+                    Location = new Point(165 + (85 * i), 478)
+                };
+
+                Label lblLandOliePb = new Label()
+                {
+                    Text = land.Oliepb.ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.None,
+                    Location = new Point(165 + (85 * i), 517)
+                };
+
+                Label lblLandSteenkoolPb = new Label()
+                {
+                    Text = land.Steenkoolpb.ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.None,
+                    Location = new Point(165 + (85 * i), 556)
+                };
+
+                Label lblLandIjzerPb = new Label()
+                {
+                    Text = land.Ijzerpb.ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.None,
+                    Location = new Point(165 + (85 * i), 595)
                 };
 
                 Controls.Add(lblLandNaam);
                 Controls.Add(lblLandGeld);
                 Controls.Add(lblLandUni);
-                Controls.Add(lblLandFabriek);
-                Controls.Add(lblLandAutomatisering);
+                Controls.Add(cbxLandFabriek);
+                Controls.Add(cbxLandAutomatisering);
+                Controls.Add(lblLandWater);
+                Controls.Add(lblLandOlie);
+                Controls.Add(lblLandSteenkool);
+                Controls.Add(lblLandIjzer);
+                Controls.Add(lblLandWaterPb);
+                Controls.Add(lblLandOliePb);
+                Controls.Add(lblLandSteenkoolPb);
+                Controls.Add(lblLandIjzerPb);
             }
+        }
+
+        private void FillFabriekenComboBox(ComboBox cbx, Fabriek fabriek)
+        {
+            if (fabriek.Water) cbx.Items.Add("Water");
+            if (fabriek.Olie) cbx.Items.Add("Olie");
+            if (fabriek.Steenkool) cbx.Items.Add("Steenkool");
+            if (fabriek.Ijzer) cbx.Items.Add("Ijzer");
+
+            if (cbx.Items.Count == 0) cbx.Items.Add("Geen");
+
+            cbx.SelectedIndex = 0;
+        }
+
+        private void FillAutomatiseringComboBox(ComboBox cbx, Automatisering auto)
+        {
+            if (auto.Water) cbx.Items.Add("Water");
+            if (auto.Olie) cbx.Items.Add("Olie");
+            if (auto.Steenkool) cbx.Items.Add("Steenkool");
+            if (auto.Ijzer) cbx.Items.Add("Ijzer");
+
+            if (cbx.Items.Count == 0) cbx.Items.Add("Geen");
+
+            cbx.SelectedIndex = 0;
         }
     }
 }
