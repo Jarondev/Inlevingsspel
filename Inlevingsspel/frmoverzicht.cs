@@ -166,7 +166,7 @@ namespace Inlevingsspel
             }
         }
 
-        private void FillFabriekenComboBox(ComboBox cbx, Fabriek fabriek)
+        private static void FillFabriekenComboBox(ComboBox cbx, Fabriek fabriek)
         {
             if (fabriek.Water) cbx.Items.Add("Water");
             if (fabriek.Olie) cbx.Items.Add("Olie");
@@ -178,7 +178,7 @@ namespace Inlevingsspel
             cbx.SelectedIndex = 0;
         }
 
-        private void FillAutomatiseringComboBox(ComboBox cbx, Automatisering auto)
+        private static void FillAutomatiseringComboBox(ComboBox cbx, Automatisering auto)
         {
             if (auto.Water) cbx.Items.Add("Water");
             if (auto.Olie) cbx.Items.Add("Olie");
