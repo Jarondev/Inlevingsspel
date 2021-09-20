@@ -80,6 +80,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.lblautotegoed = new System.Windows.Forms.Label();
             this.lblfabriekentegoed = new System.Windows.Forms.Label();
+            this.overzichtAandelenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -350,7 +351,9 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.overzichtLandenToolStripMenuItem});
+            this.overzichtLandenToolStripMenuItem,
+            this.overzichtAandelenToolStripMenuItem});
+            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1020, 24);
@@ -570,6 +573,12 @@
             this.lblfabriekentegoed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblfabriekentegoed.Click += new System.EventHandler(this.lblfabriekentegoed_Click);
             // 
+            // overzichtAandelenToolStripMenuItem
+            // 
+            this.overzichtAandelenToolStripMenuItem.Name = "overzichtAandelenToolStripMenuItem";
+            this.overzichtAandelenToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.overzichtAandelenToolStripMenuItem.Text = "Overzicht aandelen";
+            // 
             // frmspel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -704,5 +713,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblautotegoed;
         private System.Windows.Forms.Label lblfabriekentegoed;
+        private System.Windows.Forms.ToolStripMenuItem overzichtAandelenToolStripMenuItem;
     }
 }

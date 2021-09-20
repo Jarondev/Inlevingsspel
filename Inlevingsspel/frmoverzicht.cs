@@ -34,6 +34,7 @@ namespace Inlevingsspel
             lbllijn3.Size = lineSize;
             lbllijn4.Size = lineSize;
             lbllijn5.Size = lineSize;
+            lbllijn6.Size = lineSize;
 
             Width = 85 * (1 + landenCount) + 155;
             btnsluiten.Location = new Point(Width - 185, btnsluiten.Location.Y);
@@ -58,12 +59,20 @@ namespace Inlevingsspel
                     Location = new Point(165 + (85 * i), 70)
                 };
 
+                Label lblLandAfval = new Label()
+                {
+                    Text = land.Afval.ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.None,
+                    Location = new Point(165 + (85 * i), 138)
+                };
+
                 Label lblLandUni = new Label()
                 {
                     Text = land.Uni.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 138)
+                    Location = new Point(165 + (85 * i), 216)
                 };
 
                 ComboBox cbxLandFabriek = new ComboBox()
@@ -71,7 +80,7 @@ namespace Inlevingsspel
                     DropDownStyle = ComboBoxStyle.DropDownList,
                     Width = 80,
                     Dock = DockStyle.None,
-                    Location = new Point(180 + (85 * i), 177)
+                    Location = new Point(180 + (85 * i), 255)
                 };
 
                 FillFabriekenComboBox(cbxLandFabriek, land.Fabriek);
@@ -81,7 +90,7 @@ namespace Inlevingsspel
                     DropDownStyle = ComboBoxStyle.DropDownList,
                     Width = 80,
                     Dock = DockStyle.None,
-                    Location = new Point(180 + (85 * i), 216)
+                    Location = new Point(180 + (85 * i), 294)
                 };
 
                 FillAutomatiseringComboBox(cbxLandAutomatisering, land.Automatisering);
@@ -91,7 +100,7 @@ namespace Inlevingsspel
                     Text = land.Water.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 286)
+                    Location = new Point(165 + (85 * i), 364)
                 };
 
                 Label lblLandOlie = new Label()
@@ -99,7 +108,7 @@ namespace Inlevingsspel
                     Text = land.Olie.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 325)
+                    Location = new Point(165 + (85 * i), 403)
                 };
 
                 Label lblLandSteenkool = new Label()
@@ -107,7 +116,7 @@ namespace Inlevingsspel
                     Text = land.Steenkool.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 364)
+                    Location = new Point(165 + (85 * i), 442)
                 };
 
                 Label lblLandIjzer = new Label()
@@ -115,7 +124,7 @@ namespace Inlevingsspel
                     Text = land.Ijzer.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 403)
+                    Location = new Point(165 + (85 * i), 481)
                 };
 
                 Label lblLandWaterPb = new Label()
@@ -123,7 +132,7 @@ namespace Inlevingsspel
                     Text = land.Waterpb.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 478)
+                    Location = new Point(165 + (85 * i), 556)
                 };
 
                 Label lblLandOliePb = new Label()
@@ -131,7 +140,7 @@ namespace Inlevingsspel
                     Text = land.Oliepb.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 517)
+                    Location = new Point(165 + (85 * i), 595)
                 };
 
                 Label lblLandSteenkoolPb = new Label()
@@ -139,7 +148,7 @@ namespace Inlevingsspel
                     Text = land.Steenkoolpb.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 556)
+                    Location = new Point(165 + (85 * i), 634)
                 };
 
                 Label lblLandIjzerPb = new Label()
@@ -147,11 +156,12 @@ namespace Inlevingsspel
                     Text = land.Ijzerpb.ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     Dock = DockStyle.None,
-                    Location = new Point(165 + (85 * i), 595)
+                    Location = new Point(165 + (85 * i), 673)
                 };
 
                 Controls.Add(lblLandNaam);
                 Controls.Add(lblLandGeld);
+                Controls.Add(lblLandAfval);
                 Controls.Add(lblLandUni);
                 Controls.Add(cbxLandFabriek);
                 Controls.Add(cbxLandAutomatisering);

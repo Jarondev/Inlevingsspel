@@ -63,6 +63,9 @@ namespace Inlevingsspel
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.lbllijn6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -75,6 +78,7 @@ namespace Inlevingsspel
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // lbllijn1
@@ -91,9 +95,9 @@ namespace Inlevingsspel
             this.lblgebouwen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblgebouwen.Location = new System.Drawing.Point(12, 104);
             this.lblgebouwen.Name = "lblgebouwen";
-            this.lblgebouwen.Size = new System.Drawing.Size(95, 20);
+            this.lblgebouwen.Size = new System.Drawing.Size(49, 20);
             this.lblgebouwen.TabIndex = 9;
-            this.lblgebouwen.Text = "Gebouwen";
+            this.lblgebouwen.Text = "Afval";
             // 
             // lblgoud
             // 
@@ -117,7 +121,7 @@ namespace Inlevingsspel
             // 
             this.lblgrondstoffen.AutoSize = true;
             this.lblgrondstoffen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblgrondstoffen.Location = new System.Drawing.Point(12, 250);
+            this.lblgrondstoffen.Location = new System.Drawing.Point(12, 328);
             this.lblgrondstoffen.Name = "lblgrondstoffen";
             this.lblgrondstoffen.Size = new System.Drawing.Size(116, 20);
             this.lblgrondstoffen.TabIndex = 12;
@@ -126,7 +130,7 @@ namespace Inlevingsspel
             // lbllijn3
             // 
             this.lbllijn3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbllijn3.Location = new System.Drawing.Point(175, 259);
+            this.lbllijn3.Location = new System.Drawing.Point(175, 337);
             this.lbllijn3.Name = "lbllijn3";
             this.lbllijn3.Size = new System.Drawing.Size(675, 2);
             this.lbllijn3.TabIndex = 14;
@@ -134,7 +138,7 @@ namespace Inlevingsspel
             // lbluniversiteit
             // 
             this.lbluniversiteit.AutoSize = true;
-            this.lbluniversiteit.Location = new System.Drawing.Point(54, 138);
+            this.lbluniversiteit.Location = new System.Drawing.Point(54, 216);
             this.lbluniversiteit.Name = "lbluniversiteit";
             this.lbluniversiteit.Size = new System.Drawing.Size(87, 20);
             this.lbluniversiteit.TabIndex = 24;
@@ -143,7 +147,7 @@ namespace Inlevingsspel
             // lblfabriek
             // 
             this.lblfabriek.AutoSize = true;
-            this.lblfabriek.Location = new System.Drawing.Point(54, 177);
+            this.lblfabriek.Location = new System.Drawing.Point(54, 255);
             this.lblfabriek.Name = "lblfabriek";
             this.lblfabriek.Size = new System.Drawing.Size(62, 20);
             this.lblfabriek.TabIndex = 35;
@@ -152,7 +156,7 @@ namespace Inlevingsspel
             // lblautomatisering
             // 
             this.lblautomatisering.AutoSize = true;
-            this.lblautomatisering.Location = new System.Drawing.Point(54, 216);
+            this.lblautomatisering.Location = new System.Drawing.Point(54, 294);
             this.lblautomatisering.Name = "lblautomatisering";
             this.lblautomatisering.Size = new System.Drawing.Size(116, 20);
             this.lblautomatisering.TabIndex = 44;
@@ -161,7 +165,7 @@ namespace Inlevingsspel
             // lblwater
             // 
             this.lblwater.AutoSize = true;
-            this.lblwater.Location = new System.Drawing.Point(54, 286);
+            this.lblwater.Location = new System.Drawing.Point(54, 364);
             this.lblwater.Name = "lblwater";
             this.lblwater.Size = new System.Drawing.Size(52, 20);
             this.lblwater.TabIndex = 55;
@@ -170,7 +174,7 @@ namespace Inlevingsspel
             // lblolie
             // 
             this.lblolie.AutoSize = true;
-            this.lblolie.Location = new System.Drawing.Point(54, 325);
+            this.lblolie.Location = new System.Drawing.Point(54, 403);
             this.lblolie.Name = "lblolie";
             this.lblolie.Size = new System.Drawing.Size(36, 20);
             this.lblolie.TabIndex = 57;
@@ -179,7 +183,7 @@ namespace Inlevingsspel
             // lblsteenkool
             // 
             this.lblsteenkool.AutoSize = true;
-            this.lblsteenkool.Location = new System.Drawing.Point(54, 364);
+            this.lblsteenkool.Location = new System.Drawing.Point(54, 442);
             this.lblsteenkool.Name = "lblsteenkool";
             this.lblsteenkool.Size = new System.Drawing.Size(81, 20);
             this.lblsteenkool.TabIndex = 59;
@@ -188,7 +192,7 @@ namespace Inlevingsspel
             // lblijzer
             // 
             this.lblijzer.AutoSize = true;
-            this.lblijzer.Location = new System.Drawing.Point(54, 403);
+            this.lblijzer.Location = new System.Drawing.Point(54, 481);
             this.lblijzer.Name = "lblijzer";
             this.lblijzer.Size = new System.Drawing.Size(39, 20);
             this.lblijzer.TabIndex = 61;
@@ -197,7 +201,7 @@ namespace Inlevingsspel
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(11, 394);
+            this.pictureBox8.Location = new System.Drawing.Point(11, 472);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(37, 35);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -207,7 +211,7 @@ namespace Inlevingsspel
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(11, 353);
+            this.pictureBox7.Location = new System.Drawing.Point(11, 431);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(37, 35);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,7 +221,7 @@ namespace Inlevingsspel
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Inlevingsspel.Properties.Resources.car_engine_oil_icon_png_35_v2;
-            this.pictureBox6.Location = new System.Drawing.Point(11, 316);
+            this.pictureBox6.Location = new System.Drawing.Point(11, 394);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(37, 31);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -227,7 +231,7 @@ namespace Inlevingsspel
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Inlevingsspel.Properties.Resources.drop_ink_oil_water_blue_round_512;
-            this.pictureBox5.Location = new System.Drawing.Point(11, 279);
+            this.pictureBox5.Location = new System.Drawing.Point(11, 357);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(37, 31);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -237,7 +241,7 @@ namespace Inlevingsspel
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Inlevingsspel.Properties.Resources.Mac_Signal_512;
-            this.pictureBox4.Location = new System.Drawing.Point(11, 210);
+            this.pictureBox4.Location = new System.Drawing.Point(11, 288);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(37, 31);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -247,7 +251,7 @@ namespace Inlevingsspel
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Inlevingsspel.Properties.Resources.Factory_512;
-            this.pictureBox3.Location = new System.Drawing.Point(11, 171);
+            this.pictureBox3.Location = new System.Drawing.Point(11, 249);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(37, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -257,7 +261,7 @@ namespace Inlevingsspel
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Inlevingsspel.Properties.Resources.Icon_1_512;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 133);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 211);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(37, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -267,7 +271,7 @@ namespace Inlevingsspel
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Inlevingsspel.Properties.Resources.Money_Bag_512;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 64);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(37, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -276,7 +280,7 @@ namespace Inlevingsspel
             // 
             // btnsluiten
             // 
-            this.btnsluiten.Location = new System.Drawing.Point(702, 639);
+            this.btnsluiten.Location = new System.Drawing.Point(702, 717);
             this.btnsluiten.Name = "btnsluiten";
             this.btnsluiten.Size = new System.Drawing.Size(148, 33);
             this.btnsluiten.TabIndex = 95;
@@ -287,7 +291,7 @@ namespace Inlevingsspel
             // lbllijn4
             // 
             this.lbllijn4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbllijn4.Location = new System.Drawing.Point(175, 451);
+            this.lbllijn4.Location = new System.Drawing.Point(175, 529);
             this.lbllijn4.Name = "lbllijn4";
             this.lbllijn4.Size = new System.Drawing.Size(675, 2);
             this.lbllijn4.TabIndex = 96;
@@ -295,7 +299,7 @@ namespace Inlevingsspel
             // lbllijn5
             // 
             this.lbllijn5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbllijn5.Location = new System.Drawing.Point(175, 630);
+            this.lbllijn5.Location = new System.Drawing.Point(175, 708);
             this.lbllijn5.Name = "lbllijn5";
             this.lbllijn5.Size = new System.Drawing.Size(675, 2);
             this.lbllijn5.TabIndex = 110;
@@ -303,7 +307,7 @@ namespace Inlevingsspel
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(54, 595);
+            this.label6.Location = new System.Drawing.Point(54, 673);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 20);
             this.label6.TabIndex = 105;
@@ -312,7 +316,7 @@ namespace Inlevingsspel
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(11, 586);
+            this.pictureBox9.Location = new System.Drawing.Point(11, 664);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(37, 35);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -322,7 +326,7 @@ namespace Inlevingsspel
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(54, 556);
+            this.label7.Location = new System.Drawing.Point(54, 634);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 20);
             this.label7.TabIndex = 103;
@@ -331,7 +335,7 @@ namespace Inlevingsspel
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(11, 545);
+            this.pictureBox10.Location = new System.Drawing.Point(11, 623);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(37, 35);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -341,7 +345,7 @@ namespace Inlevingsspel
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(54, 517);
+            this.label8.Location = new System.Drawing.Point(54, 595);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(36, 20);
             this.label8.TabIndex = 101;
@@ -350,7 +354,7 @@ namespace Inlevingsspel
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Inlevingsspel.Properties.Resources.car_engine_oil_icon_png_35_v2;
-            this.pictureBox11.Location = new System.Drawing.Point(11, 508);
+            this.pictureBox11.Location = new System.Drawing.Point(11, 586);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(37, 31);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -360,7 +364,7 @@ namespace Inlevingsspel
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(54, 478);
+            this.label9.Location = new System.Drawing.Point(54, 556);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 20);
             this.label9.TabIndex = 99;
@@ -369,7 +373,7 @@ namespace Inlevingsspel
             // pictureBox12
             // 
             this.pictureBox12.Image = global::Inlevingsspel.Properties.Resources.drop_ink_oil_water_blue_round_512;
-            this.pictureBox12.Location = new System.Drawing.Point(11, 471);
+            this.pictureBox12.Location = new System.Drawing.Point(11, 549);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(37, 31);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -380,17 +384,48 @@ namespace Inlevingsspel
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(12, 442);
+            this.label10.Location = new System.Drawing.Point(12, 520);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(83, 20);
             this.label10.TabIndex = 97;
             this.label10.Text = "Per beurt";
             // 
+            // lbllijn6
+            // 
+            this.lbllijn6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbllijn6.Location = new System.Drawing.Point(175, 183);
+            this.lbllijn6.Name = "lbllijn6";
+            this.lbllijn6.Size = new System.Drawing.Size(675, 2);
+            this.lbllijn6.TabIndex = 112;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(12, 174);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 20);
+            this.label2.TabIndex = 111;
+            this.label2.Text = "Gebouwen";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::Inlevingsspel.Properties.Resources._47_512;
+            this.pictureBox13.Location = new System.Drawing.Point(11, 132);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 113;
+            this.pictureBox13.TabStop = false;
+            // 
             // frmoverzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 684);
+            this.ClientSize = new System.Drawing.Size(864, 759);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.lbllijn6);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lbllijn5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox9);
@@ -443,6 +478,7 @@ namespace Inlevingsspel
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,5 +518,8 @@ namespace Inlevingsspel
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbllijn6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }
