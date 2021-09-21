@@ -1,6 +1,6 @@
 ﻿namespace Inlevingsspel
 {
-    partial class frmgrondstoffen
+    partial class frmfase1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmgrondstoffen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmfase1));
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -287,7 +287,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // frmgrondstoffen
+            // frmfase1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -318,8 +318,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmgrondstoffen";
-            this.Text = "frmgrondstoffen";
+            this.Name = "frmfase1";
+            this.Text = "Fase 1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();

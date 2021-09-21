@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Inlevingsspel
 {
-    public partial class frmgrondstoffen : Form
+    public partial class frmfase1 : Form
     {
-        public frmgrondstoffen()
+        public frmfase1()
         {
             InitializeComponent();
             label2.Text = "Land: " + frmspel.Landen[frmspel.huidig].Naam;

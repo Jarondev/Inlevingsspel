@@ -100,13 +100,18 @@ namespace Inlevingsspel
                 lblautotegoed.Visible = true;
             }
             else lblautotegoed.Visible = false;
-            if(fase == 1)
+            switch (fase)
             {
-                fase++;
-                frmgrondstoffen frmgrondstoffeni = new frmgrondstoffen();
-                frmgrondstoffeni.StartPosition = FormStartPosition.CenterParent;
-                frmgrondstoffeni.ShowDialog();
-                frmspel_Shown(sender, e);
+                case 1:
+                    fase++;
+                    frmfase1 frmgrondstoffeni = new frmfase1();
+                    frmgrondstoffeni.StartPosition = FormStartPosition.CenterParent;
+                    frmgrondstoffeni.ShowDialog();
+                    frmspel_Shown(sender, e);
+                    break;
+                case 2:
+                    fase++;
+                    break;
             }
         }
 
