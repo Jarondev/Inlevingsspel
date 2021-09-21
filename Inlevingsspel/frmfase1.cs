@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Inlevingsspel.Landen;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,24 +13,24 @@ namespace Inlevingsspel
 {
     public partial class frmfase1 : Form
     {
-        public frmfase1()
+        public frmfase1(Land land)
         {
             InitializeComponent();
-            label2.Text = "Land: " + frmspel.Landen[frmspel.huidig].Naam;
-            lblgoud.Text += frmspel.Landen[frmspel.huidig].Geldpb.ToString();
-            lblkennis.Text += frmspel.Landen[frmspel.huidig].Kennispb.ToString();
-            lblafval.Text += frmspel.Landen[frmspel.huidig].Afvalpb.ToString();
-            lblwater.Text += frmspel.Landen[frmspel.huidig].Waterpb.ToString();
-            lblolie.Text += frmspel.Landen[frmspel.huidig].Oliepb.ToString();
-            lblsteenkool.Text += frmspel.Landen[frmspel.huidig].Steenkoolpb.ToString();
-            lblijzer.Text += frmspel.Landen[frmspel.huidig].Ijzerpb.ToString();
-            frmspel.Landen[frmspel.huidig].Geld += frmspel.Landen[frmspel.huidig].Geldpb;
-            frmspel.Landen[frmspel.huidig].Kennis += frmspel.Landen[frmspel.huidig].Kennispb;
-            frmspel.Landen[frmspel.huidig].Afval += frmspel.Landen[frmspel.huidig].Afvalpb;
-            frmspel.Landen[frmspel.huidig].Water += frmspel.Landen[frmspel.huidig].Waterpb;
-            frmspel.Landen[frmspel.huidig].Olie += frmspel.Landen[frmspel.huidig].Oliepb;
-            frmspel.Landen[frmspel.huidig].Steenkool += frmspel.Landen[frmspel.huidig].Steenkoolpb;
-            frmspel.Landen[frmspel.huidig].Ijzer += frmspel.Landen[frmspel.huidig].Ijzerpb;
+            label2.Text = "Land: " + land.Naam;
+            lblgoud.Text += land.Geldpb.ToString();
+            lblkennis.Text += land.Kennispb.ToString();
+            lblafval.Text += land.Afvalpb.ToString();
+            lblwater.Text += land.Waterpb.ToString();
+            lblolie.Text += land.Oliepb.ToString();
+            lblsteenkool.Text += land.Steenkoolpb.ToString();
+            lblijzer.Text += land.Ijzerpb.ToString();
+            land.Geld += land.Geldpb;
+            land.Kennis += land.Kennispb;
+            land.Afval += land.Afvalpb;
+            land.Water += land.Waterpb;
+            land.Olie += land.Oliepb;
+            land.Steenkool += land.Steenkoolpb;
+            land.Ijzer += land.Ijzerpb;
         }
 
         private void button1_Click(object sender, EventArgs e)

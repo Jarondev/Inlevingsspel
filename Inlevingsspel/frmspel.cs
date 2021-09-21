@@ -104,7 +104,7 @@ namespace Inlevingsspel
             {
                 case 1:
                     fase++;
-                    frmfase1 frmgrondstoffeni = new frmfase1();
+                    frmfase1 frmgrondstoffeni = new frmfase1(Landen[huidig]);
                     frmgrondstoffeni.StartPosition = FormStartPosition.CenterParent;
                     frmgrondstoffeni.ShowDialog();
                     frmspel_Shown(sender, e);
