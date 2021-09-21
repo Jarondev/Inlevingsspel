@@ -59,6 +59,28 @@ namespace Inlevingsspel
         }
         private void frmspel_Shown(object sender, EventArgs e)
         {
+            updateLandGegevens();
+            switch (fase)
+            {
+                case 1:
+                    fase++;
+                    frmfase1 frmgrondstoffeni = new frmfase1(Landen[huidig]);
+                    frmgrondstoffeni.StartPosition = FormStartPosition.CenterParent;
+                    frmgrondstoffeni.ShowDialog();
+                    frmspel_Shown(sender, e);
+                    break;
+                case 2:
+                    fase++;
+                    frmfase2 frmfase2 = new frmfase2(Landen[huidig]);
+                    frmfase2.StartPosition = FormStartPosition.CenterParent;
+                    frmfase2.ShowDialog();
+                    frmspel_Shown(sender, e);
+                    break;
+            }
+        }
+
+        private void updateLandGegevens()
+        {
             lblland.Text = "Huidig land: " + Landen[huidig].Naam;
             lblgroep.Text = "Groep van: " + Landen[huidig].Groepsnaam;
 
@@ -80,39 +102,26 @@ namespace Inlevingsspel
             lblsteenkoolauto.Text = Util.BooleanToJaNee(Landen[huidig].Automatisering.Steenkool);
             lblolieauto.Text = Util.BooleanToJaNee(Landen[huidig].Automatisering.Olie);
 
-            if (Landen[huidig].Fabriekentegoed >= 1 
-                && !(Landen[huidig].Fabriek.Water 
-                && Landen[huidig].Fabriek.Ijzer 
-                && Landen[huidig].Fabriek.Steenkool 
+            if (Landen[huidig].Fabriekentegoed >= 1
+                && !(Landen[huidig].Fabriek.Water
+                && Landen[huidig].Fabriek.Ijzer
+                && Landen[huidig].Fabriek.Steenkool
                 && Landen[huidig].Fabriek.Olie))
             {
                 lblfabriekentegoed.Visible = true;
                 lblfabriekentegoed.Text = "Te goed: " + Landen[huidig].Fabriekentegoed.ToString();
             }
             else lblfabriekentegoed.Visible = false;
-            if (Landen[huidig].Automatiseringtegoed >= 1 
-                && !(Landen[huidig].Automatisering.Water 
-                && Landen[huidig].Automatisering.Ijzer 
-                && Landen[huidig].Automatisering.Steenkool 
+            if (Landen[huidig].Automatiseringtegoed >= 1
+                && !(Landen[huidig].Automatisering.Water
+                && Landen[huidig].Automatisering.Ijzer
+                && Landen[huidig].Automatisering.Steenkool
                 && Landen[huidig].Automatisering.Olie))
             {
                 lblautotegoed.Text = "Te goed: " + Landen[huidig].Automatiseringtegoed.ToString();
                 lblautotegoed.Visible = true;
             }
             else lblautotegoed.Visible = false;
-            switch (fase)
-            {
-                case 1:
-                    fase++;
-                    frmfase1 frmgrondstoffeni = new frmfase1(Landen[huidig]);
-                    frmgrondstoffeni.StartPosition = FormStartPosition.CenterParent;
-                    frmgrondstoffeni.ShowDialog();
-                    frmspel_Shown(sender, e);
-                    break;
-                case 2:
-                    fase++;
-                    break;
-            }
         }
 
         private void overzichtLandenToolStripMenuItem_Click(object sender, EventArgs e)
